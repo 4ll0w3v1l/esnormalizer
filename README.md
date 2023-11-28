@@ -3,6 +3,7 @@ Normalize elasticsearch scores with some drawbacks
 
 just use it like this:
 
+from esnormalizer import EsNormalizer
 normalized_response = EsNormalizer(elasticsearch_response).z_score()
 
 available techniques: minmax(), clip(), log_scale(), z_score()
